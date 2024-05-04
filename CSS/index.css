@@ -1,0 +1,147 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 放在整个页面最底下的背景图片, 我也不知道怎么实现就用这个了 */
+.before {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/background.webp');
+    background-size: cover;
+    /* 确保背景图片覆盖整个元素，不变形 */
+    background-position: center;
+    /* 背景图片居中显示 */
+    width: 100vw;
+    /* 宽度设置为视口宽度的100% */
+    height: 100vh;
+    /* 高度设置为视口高度的100% */
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* 确保子元素垂直排列 */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, rgba(64, 144, 185, 0.5), rgba(0, 0, 0, 0.9));
+    position: relative;
+}
+
+/* 头像样式 */
+.profile {
+    display: block;
+    /* 使链接独占一行 */
+    background-image: url(../images/miku04.webp);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    /* 给图片和文字之间添加一些间距 */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile:hover {
+    transform: scale(1.1);
+    /* 鼠标悬停时放大头像 */
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.7);
+    /* 鼠标悬停时添加阴影 */
+}
+
+.panel-title {
+    margin: 0 0 5px 0;
+    font-size: 1.8em;
+    letter-spacing: 4px;
+
+    /* color: #FFF; 这个妹有用, 因为没有改子元素a标签的颜色 */
+}
+
+.panel-title a {
+    color: #6cf;
+}
+
+.panel-title a:hover,
+.panel-title:hover {
+    /* 鼠标悬停时放大标题 这一项只能对外面的盒子有用 */
+    transform: scale(1.1);
+    /* 鼠标悬停时链接的颜色, 这一项只对链接有效 */
+    color: rgb(64, 144, 185);
+    /* 不能用box-shadow, 因为这是盒子阴影, 对文字用会很奇怪 */
+    /* box-shadow: 10px 10px 10px rgba(102, 204, 255, 0.5); */
+    /* 发现用这个就好了(喜) */
+    text-shadow: 10px 10px 10px rgba(60, 140, 180, 0.8);
+}
+
+.panel-cover__divider1 {
+    width: 20%;
+    /* margin: auto; */
+    /* 水平居中线段 */
+    border: none;
+    /* 移除默认的边框样式 */
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    /* 添加上边框，设置线段的粗细和颜色 */
+}
+
+.panel-cover__divider2 {
+    width: 5%;
+    /* 或者任何你想要的宽度 */
+    /* margin: auto; */
+    /* 水平居中线段 */
+    border: none;
+    /* 移除默认的边框样式 */
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    /* 添加上边框，设置线段的粗细和颜色 */
+}
+
+.panel-cover__description {
+    font-weight: 300;
+    line-height: 1.5;
+    color: #80a1ea;
+    /* 设置文字颜色 */
+
+}
+
+/* 移除默认的列表项标记 */
+.navigation__item {
+    list-style-type: none;
+    /* 去掉前面的点 */
+    display: inline-block;
+    /* 横着排列 */
+    margin-right: 10px;
+    margin-left: 10px;
+    /* 为列表项之间添加一些间距 */
+}
+
+/* 设置链接的样式 */
+.navigation__item a {
+    text-decoration: none;
+    /* 移除下划线 */
+    color: #ccc;
+    /* 设置为浅灰色 */
+    font-size: 14px;
+    /* 设置较小的字体大小 */
+    padding: 5px 10px;
+    /* 添加一些内边距，使链接看起来更清晰 */
+}
+
+/* 为链接添加悬停效果 */
+.navigation__item:hover,
+.navigation__item a:hover {
+    transform: scale(1.1);
+    color: #999;
+    /* 鼠标悬停时颜色变深 */
+}
+
+/* 如果需要对导航栏自身添加样式 */
+nav {
+    padding: 10px 0;
+    /* 上下内边距 */
+}

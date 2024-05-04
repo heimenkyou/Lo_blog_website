@@ -1,0 +1,181 @@
+/* styles.css */
+
+/* 清除a标签的样式 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f5f5f5; */
+    background-image: url(../images/navbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    /* 设置容器最大宽度为960px，居中显示 */
+    max-width: 960px;
+    margin: 0 auto;
+    /* 设置内边距为20px */
+    padding: 20px;
+    /* 设置display属性为grid，并设置grid-template-columns属性为1fr和300px */
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    /* 设置grid-gap属性为20px */
+    grid-gap: 20px;
+}
+
+/* 头部样式 */
+header {
+    background-image: url(../images/header-bg.webp);
+    background-size: cover;
+    opacity: 0.7;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 主要内容区域样式 */
+main {
+    grid-column: 1;
+    /* 背景颜色 */
+    background-color: #fff;
+    /* 透明度 */
+    /* opacity: 0.7; */
+    /* 内边距 */
+    padding: 20px;
+    /* 底部外边距 */
+    margin-bottom: 20px;
+    /* 圆角 */
+    border-radius: 5px;
+    /* 阴影 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article {
+    background-color: #fff;
+    opacity: 0.7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+article p {
+    line-height: 1.6;
+}
+
+article footer {
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: #8ea3c7;
+}
+
+/* 跳转到文章页面的链接样式 */
+article>a {
+    color: rgb(100, 139, 236);
+    font-weight: bold;
+    padding: 15px;
+    padding-left: 0;
+    /*debug*/
+
+}
+
+article>a:hover {
+    padding-left: 20px;
+}
+
+/* 管理文章标注的标签 */
+.Label>a {
+    color: cyan;
+}
+
+/* 侧边栏样式 */
+aside {
+    grid-column: 2;
+    /* 设置侧边栏在网格中的列数为2 */
+    background-color: #66ccff;
+    opacity: 0.8;
+    /* 设置侧边栏的背景颜色 */
+    padding: 20px;
+    /* 设置侧边栏的内边距 */
+    margin-bottom: 20px;
+    /* 设置侧边栏的底部外边距 */
+    border-radius: 5px;
+    /* 设置侧边栏的圆角半径 */
+    box-shadow: 0 2px 4px rgba(205, 223, 212, 0.1);
+    /* 设置侧边栏的阴影效果 */
+}
+
+
+.widget {
+    background-color: #66ccff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(205, 223, 212, 0.1);
+}
+
+.widget h3 {
+    margin-top: 0;
+}
+
+.widget ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.widget ul li {
+    margin-bottom: 10px;
+}
+
+.widget ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* 底部样式 */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}

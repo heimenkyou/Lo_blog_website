@@ -1,0 +1,9 @@
+# 提交时忽略vscode目录, NPC目录和其他没啥大用的
+.vscode/*
+NPC/*
+backup/*
+test/*
+*.7z
+# 可能是nginx生成的罢, 不太懂
+*.ini
+*.htaccess
