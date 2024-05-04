@@ -1,0 +1,76 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    background-image: url("../images/background1.webp");
+    background-size: cover;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 15vw;
+    height: 15vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+
+    text-align: center;
+    line-height: 15vh;
+    background-color: skyblue;
+}
+
+.nav {
+    width: 15vw;
+    height: 100vh;
+    background-color: aliceblue;
+    position: fixed;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+section p {
+    text-indent: 1em;
+    font-size: 16px;
+}
+
+.directory .item {
+    margin-bottom: 10px;
+}
+
+.directory .submenu {
+    display: none;
+    margin-left: 20px;
+}
+
+.directory .toggle {
+    cursor: pointer;
+    padding: 5px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+
+.directory {
+    max-height: 100vh; /* 可以设置为您希望的高度 */
+    overflow-y: auto; /* 启用垂直滚动条 */
+}
+
+.content {
+    width: 85vw;
+    height: auto;
+    min-height: 100vh;
+    
+    background-color: rgb(255, 255, 255, 0.5);
+    /* 设置为半透明 */
+    margin-left: 15vw;
+}

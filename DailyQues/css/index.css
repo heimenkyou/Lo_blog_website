@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/background.webp");
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* intro是指引导用户进入 */
+.intro {
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    top: 50%;
+    margin-left: -125px; /* 元素高度的一半 */
+    margin-top: -125px;
+    background: linear-gradient(135deg, #007bff, #6f42c1);
+    border-radius: 50%;
+    transition: 1.0s;
+}
+
+/* 鼠标悬停放大效果 */
+.intro:hover {
+    background-color: #0062cc;
+    cursor: pointer;
+    transition: 1.0s;
+    transform: scale(1.5);
+}
+
+/* img用于显示背景文字 */
+.img {
+    border-radius: 20%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px; /* 元素高度的一半 */
+    margin-left: -250px;
+    width: 500px;
+    height: 500px;
+    /* 设置元素的默认状态，不旋转 */
+    transform: rotate(0deg);
+    /* 设置动画的名称和持续时间 */
+    animation: rotation 20s infinite;
+    /* 初始状态动画暂停 */
+    animation-play-state: paused;
+    /* 设置动画的缓动函数 */
+    animation-timing-function: linear;
+}
+
+/* 鼠标悬停时继续动画 */
+.img.hover-effect  {
+      /* 鼠标悬停时继续动画 */
+    animation-play-state: running;
+}
+
+/* 制作文字旋转的效果 */
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+/* 开始文字 */
+.start {
+    color: #fff;
+    /* 水平居中 */
+    text-align: center;
+    /* 垂直居中 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}

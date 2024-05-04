@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日一题</title>
+    <link rel="stylesheet" href="./css/DailyQues.css">
+</head>
+<body>
+    <!-- 导航键 + 目录 -->
+    <header class="nav">
+        
+        <div class="logo">
+            DailyQues
+        </div>
+            <div class="directory">
+                <!-- 每日一题 -->
+                <div class="item">
+                    <a href="#section1">2024年5月4日</a>
+                    <button class="toggle"><</button>
+                    <div class="submenu">
+                        <a href="#subsection1-1">每日一题</a>
+                        <a href="#subsection1-2">每日二题</a>
+                    </div>
+                </div>
+                
+                
+            </div>
+    </header>
+
+    <!-- 具体题目 -->
+    <main class="content">
+        <!-- 每日一题模板 -->
+        <div class="section" id="section1">2024年5月4日</div>
+        <div class="subsection" id="subsection1-1">
+            <div class="question">
+                <p>这是一个问题</p>
+            </div>
+            <div class="answer">
+                <p>这是一个答案</p>
+            </div>
+        </div>
+                    
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var toggles = document.querySelectorAll('.directory .toggle');
+
+        toggles.forEach(function(toggle) {
+        toggle.addEventListener('click', function() {
+        var submenu = this.nextElementSibling;
+        if (submenu.style.display === 'block') {
+            submenu.style.display = 'none';
+            this.textContent = '<';
+        } else {
+            submenu.style.display = 'block';
+            this.textContent = 'v';
+        }
+            });
+        });
+    });
+    </script>
+</body>
+</html>
