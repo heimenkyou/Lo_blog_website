@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>每日一题</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <link rel="stylesheet" href="./css/DailyQues_dev.css">
+
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <img src="./images/icon.png" alt="Logo">
+    </div>
+    <div class="title">
+      每日一题
+    </div>
+    <div class="menu">
+      <ul>
+        <!-- 题目 -->
+
+        <li class="sidebar-menu-item">
+          <a href="#section1">2024年5月4日</a>
+          <button class="toggle-button">&lt;</button>
+          <div class="submenu">
+            <a href="#subsection1-1">每日一题</a>
+            <a href="#subsection1-2">每日二题</a>
+          </div>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="#section1">2024年5月4日</a>
+          <button class="toggle-button">&lt;</button>
+          <div class="submenu">
+            <a href="#subsection1-1">每日一题</a>
+            <a href="#subsection1-2">每日二题</a>
+          </div>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="#section1">2024年5月4日</a>
+          <button class="toggle-button">&lt;</button>
+          <div class="submenu">
+            <a href="#subsection1-1">每日一题</a>
+            <a href="#subsection1-2">每日二题</a>
+          </div>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="#section1">2024年5月4日</a>
+          <button class="toggle-button">&lt;</button>
+          <div class="submenu">
+            <a href="#subsection1-1">每日一题</a>
+            <a href="#subsection1-2">每日二题</a>
+          </div>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="#section1">2024年5月4日</a>
+          <button class="toggle-button">&lt;</button>
+          <div class="submenu">
+            <a href="#subsection1-1">每日一题</a>
+            <a href="#subsection1-2">每日二题</a>
+          </div>
+        </li>
+        <li class="sidebar-menu-item">
+          <a href="#section1">2024年5月4日</a>
+          <button class="toggle-button">&lt;</button>
+          <div class="submenu">
+            <a href="#subsection1-1">每日一题</a>
+            <a href="#subsection1-2">每日二题</a>
+          </div>
+        </li>
+
+        <!-- 添加更多题目 -->
+      </ul>
+    </div>
+  </div>
+  <div class="main-content">
+    <div class="question">
+      <h2>题目标题</h2>
+      <p>题目描述</p>
+      <div class="tags">
+        <span class="tag">标签1</span>
+        <span class="tag">标签2</span>
+        <!-- Add more tags as needed -->
+      </div>
+    </div>
+  </div>
+  <script>
+    // 点击按钮展开子菜单
+    document.addEventListener('DOMContentLoaded', function () {
+      // 获取所有的toggle按钮
+      var toggleButtons = document.querySelectorAll('.toggle-button');
+
+      // 为每个按钮添加点击事件监听器
+      toggleButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          // 获取当前按钮相邻的submenu
+          var submenu = button.nextElementSibling;
+
+          // 切换当前submenu的显示状态
+          submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+
+          // 根据submenu的当前显示状态更新按钮的文本
+          button.textContent = submenu.style.display === 'block' ? 'V' : '<';
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

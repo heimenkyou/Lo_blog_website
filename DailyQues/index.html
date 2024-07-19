@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>刷题启动</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <img src="./images/words.png" class="img">
+  <a href="DailyQues.html" class="intro">
+    <div class="start">刷题<br>启动</div>
+  </a>
+</body>
+<script>document.querySelector('.intro').addEventListener('mouseenter', function () {
+    document.querySelector('.img').classList.add('hover-effect');
+  });
+
+  document.querySelector('.intro').addEventListener('mouseleave', function () {
+    document.querySelector('.img').classList.remove('hover-effect');
+  });</script>
+
+</html>

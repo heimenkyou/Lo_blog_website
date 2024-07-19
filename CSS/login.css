@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  transition: .3s;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-image: url(./images/beach.webp); */
+  background-size: cover;
+}
+
+.shell {
+  width: 350px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff49;
+  border-radius: 50px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5) inset;
+  transform: translateY(-50px);
+}
+
+@keyframes textGradient {
+  0% {
+    text-shadow: 0 0 10px #ff9dff80, 0 0 20px #ff9dff80, 0 0 30px #ff9dff80;
+  }
+
+  33% {
+    text-shadow: 0 0 10px #9d9fff80, 0 0 20px #9d9fff80, 0 0 30px #9d9fff80;
+  }
+
+  67% {
+    text-shadow: 0 0 10px #fffb9d80, 0 0 20px #fffb9d80, 0 0 30px #fffb9d80;
+  }
+
+  100% {
+    text-shadow: 0 0 10px #ff9dff80, 0 0 20px #ff9dff80, 0 0 30px #ff9dff80;
+  }
+}
+
+.title {
+  font-size: 80px;
+  margin-bottom: 30px;
+  color: #fff;
+  /* 应用动画 */
+  animation: textGradient 10s ease-in-out infinite;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  border: 5px solid transparent;
+  background: rgba(255, 255, 255, .5);
+  border-radius: 100px;
+  padding: 5px 20px 0 20px;
+  transition: 0.3s;
+  font-size: 18px;
+  outline: none
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+  background: rgba(255, 255, 255, 0);
+  border: 5px solid #ffffff;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 100px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+input::placeholder {
+  color: #92A7E8;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.Remember {
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #7597ff;
+}
+
+input[type="checkbox"] {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  background-color: #007bff;
+}
+
+#Password {
+  border: none;
+  background-color: #ffffff00;
+  color: #7597ff;
+  font-size: 18px;
+}
+
+#Password:hover {
+  color: #d84e8f;
+}
